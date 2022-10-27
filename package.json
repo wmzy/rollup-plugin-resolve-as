@@ -1,0 +1,41 @@
+{
+  "name": "rollup-plugin-resolve-as",
+  "version": "0.0.0",
+  "main": "dist",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmzy/rollup-plugin-resolve-as"
+  },
+  "sideEffects": false,
+  "author": "wmzy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmzy/rollup-plugin-resolve-as/issues"
+  },
+  "homepage": "https://github.com/wmzy/rollup-plugin-resolve-as",
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "vite-plugin",
+    "resolve"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "peerDependencies": {
+    "rollup": ">=2.0.0",
+    "vite": ">=2.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.0.5"
+  }
+}
