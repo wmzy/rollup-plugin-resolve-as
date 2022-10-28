@@ -18,7 +18,7 @@ import resolveAs from 'rollup-plugin-resolve-as';
 
 export default defineConfig({
   plugins: resolveAs({
-    map: file => file.endsWith('.css') && file.endsWith('.module.css') && file.replace(/\.css$/, '.module.css')
+    map: file => file.replace(/(\.module)?\.css$/, '.module.css')
   }),
 });
 ```
