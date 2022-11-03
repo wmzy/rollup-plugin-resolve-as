@@ -38,7 +38,7 @@ export default function resolveAsPlugin({
     load(id, options) {
       const realFile = virtualToRealMap.get(id);
       if (realFile) {
-        return readFile(realFile, 'utf8');
+        return readFile(realFile.split('?', 1)[0]!, 'utf8');
       }
     },
     configureServer(server) {
